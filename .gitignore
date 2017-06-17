@@ -1,9 +1,1 @@
-*.cpp
-*cpp
-cpp
-.cpp
-
-#.cpp
-#cpp
-#*.cpp
-#*cpp
+*.pro
