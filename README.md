@@ -1,4 +1,4 @@
-# test
+# github training
 ## Remove Cache <BR/>
 * git rm -r --cached . <BR/>
 * git add . <BR/>
