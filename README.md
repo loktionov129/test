@@ -6,10 +6,11 @@
 <BR/>
 
 
-## Remove Cache <BR/>
-* git rm -r --cached . <BR/>
-* git add . <BR/>
+## Create a new repository on the command line <BR/>
+* echo "# Gallows" >> README.md <BR/>
+* git init <BR/>
 * git commit -m "fixed untracked files" <BR/>
+* it add README.md
 <BR/>
 
 ## Create a new repository on the command line <BR/>
