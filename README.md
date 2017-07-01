@@ -3,7 +3,21 @@
 * git rm -r --cached . <BR/>
 * git add . <BR/>
 * git commit -m "fixed untracked files" <BR/>
+<BR/>
 
+## create a new repository on the command line<BR/>
+<BR/>
+* echo "# Gallows" >> README.md<BR/>
+* git init<BR/>
+* git add README.md<BR/>
+* git commit -m "first commit"<BR/>
+* git remote add origin git@github.com:loktionov129/Gallows.git<BR/>
+* git push -u origin master<BR/>
+## or push an existing repository from the command line<BR/>
+<BR/>
+* git remote add origin git@github.com:loktionov129/Gallows.git<BR/>
+* git push -u origin master<BR/>
+<BR/>
 
 ## [README.md] Basic writing and formatting syntax
 + https://help.github.com/articles/basic-writing-and-formatting-syntax/
