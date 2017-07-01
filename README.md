@@ -5,6 +5,13 @@
 * git commit -m "fixed untracked files" <BR/>
 <BR/>
 
+
+## Remove Cache <BR/>
+* git rm -r --cached . <BR/>
+* git add . <BR/>
+* git commit -m "fixed untracked files" <BR/>
+<BR/>
+
 ## Create a new repository on the command line <BR/>
  <BR/>
 * echo "# Gallows" >> README.md <BR/>
