@@ -5,16 +5,7 @@
 * git commit -m "fixed untracked files" <BR/>
 <BR/>
 
-
 ## Create a new repository on the command line <BR/>
-* echo "# Gallows" >> README.md <BR/>
-* git init <BR/>
-* git commit -m "fixed untracked files" <BR/>
-* it add README.md
-<BR/>
-
-## Create a new repository on the command line <BR/>
- <BR/>
 * echo "# Gallows" >> README.md <BR/>
 * git init <BR/>
 * git add README.md <BR/>
@@ -22,7 +13,6 @@
 * git remote add origin git@github.com:loktionov129/Gallows.git <BR/>
 * git push -u origin master <BR/>
 ## Push an existing repository from the command line <BR/>
- <BR/>
 * git remote add origin git@github.com:loktionov129/Gallows.git <BR/>
 * git push -u origin master <BR/>
  <BR/>
