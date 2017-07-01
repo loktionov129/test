@@ -5,7 +5,7 @@
 * git commit -m "fixed untracked files" <BR/>
 <BR/>
 
-## create a new repository on the command line<BR/>
+## Create a new repository on the command line<BR/>
 <BR/>
 * echo "# Gallows" >> README.md<BR/>
 * git init<BR/>
