@@ -26,3 +26,22 @@
 [![Coverage Status](https://img.shields.io/coveralls/giakki/uncss.svg)](https://coveralls.io/r/giakki/uncss?branch=master)  
 [![dependencies Status](https://img.shields.io/david/giakki/uncss.svg)](https://david-dm.org/giakki/uncss)
 [![devDependencies Status](https://img.shields.io/david/dev/giakki/uncss.svg)](https://david-dm.org/giakki/uncss?type=dev)
+
+<br><br>
+
+#!/bin/sh<br>
+if [ $1 = "2" ]; then<br>
+    if test $(wmctrl -l | grep " - WebStorm" 2>&1 | wc -l) -eq 1; then <br>
+        wmctrl -k on && wmctrl -a " - WebStorm"<br>
+    elif test $(wmctrl -l | grep " MonoDevelop" 2>&1 | wc -l) -eq 1; then <br>
+        wmctrl -k on && wmctrl -a " MonoDevelop"<br>
+    fi<br>
+elif [ $1 = "3" ]; then<br>
+    if test $(wmctrl -l | grep " - PhpStorm" 2>&1 | wc -l) -eq 1; then <br>
+        wmctrl -k on && wmctrl -a " - PhpStorm"<br>
+    elif test $(wmctrl -l | grep "alex@linux" 2>&1 | wc -l) -eq 1; then <br>
+        wmctrl -a "alex@linux"<br>
+    fi<br>
+else<br>
+    wmctrl -k on && wmctrl -a "$1"<br>
+fi<br>
