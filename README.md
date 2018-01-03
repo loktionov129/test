@@ -29,6 +29,17 @@
 
 <br><br>
 ```bash
+# $1 - filename
+# $2 - str to match
+
+for i in $(ls -d */); do
+	if [ $(cat "${i%%/}/$1" | grep -i "$2") ]; then
+		echo ${i%%/}
+	fi
+done
+```
+<br>
+```bash
 #!/bin/sh
 if [ $1 = "2" ]; then
     if test $(wmctrl -l | grep " - WebStorm" 2>&1 | wc -l) -eq 1; then 
