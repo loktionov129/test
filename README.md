@@ -38,7 +38,9 @@ for i in $(ls -d */); do
 	fi
 done
 ```
+
 <br>
+
 ```bash
 #!/bin/sh
 if [ $1 = "2" ]; then
