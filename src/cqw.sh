@@ -8,3 +8,11 @@ server {
         proxy_set_header Connection "Upgrade";
     }
 }
+
+
+/*
+ws = new WebSocket("ws://my129socket.ru:8001/consoleappsample");
+ws.onopen = e => console.warn(e);
+ws.onmessage = e => console.warn(e);
+
+*/
