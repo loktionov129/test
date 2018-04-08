@@ -60,4 +60,9 @@ else
 fi
 ```
 
-[![https://github.com/loktionov129/test/blob/master/Penguins.jpg?raw=true](https://github.com/loktionov129/test/blob/master/Penguins.jpg?raw=true)(https://github.com/loktionov129/test/blob/master/Penguins.jpg?raw=true)  
+##
+<details>
+	<summary>Пингвины</summary>
+ 	<img src="/Penguins.jpg" width="40%" />
+</details>
+![https://github.com/loktionov129/test/raw/master/Penguins.jpg](https://github.com/loktionov129/test/raw/master/Penguins.jpg?raw=true)
