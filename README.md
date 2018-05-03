@@ -5,6 +5,12 @@
 * git commit -m "fixed untracked files" <BR/>
 <BR/>
 
+## git squash N
+### Which automatically squashes together the last N commits, inclusive.
+```sh
+git config --global alias.squash '!f(){ git reset --soft HEAD~${1} && git commit --edit -m"$(git log --format=%B --reverse HEAD..HEAD@{1})"; };f'
+```
+
 ## Create a new repository on the command line <BR/>
 * echo "# Gallows" >> README.md <BR/>
 * git init <BR/>
