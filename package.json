@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "release": "standard-version",
+    "standard-version": "standard-version"
   },
   "author": "loktionov129",
   "license": "ISC",
