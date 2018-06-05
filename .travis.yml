@@ -1,0 +1,32 @@
+sudo: required
+language: node_js
+node_js:
+  - stable
+addons:
+  chrome: stable
+cache:
+  directories:
+    - spec/node_modules
+branches:
+  only:
+    - develop
+    - master
+
+script:
+  - ls -a ./.circleci/ | grep .sh$ | xargs -I {} chmod +x ./.circleci/{} 
+  - if [ "$TRAVIS_BRANCH" = "develop" ] || [ "$TRAVIS_BRANCH" = "master" ]; then ./.circleci/main.sh; fi
+  - if [ "$TRAVIS_BRANCH" = "develop" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./.circleci/develop.sh; fi
+  - if [ "$TRAVIS_BRANCH" = "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./.circleci/master.sh; fi
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  
+  # https://github.com/settings/tokens
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  target-branch: gh-pages
+  email: torvalds@linux-foundation.org
+  name: Linus Torvalds
+  on:
+    branch: "master"
