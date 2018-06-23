@@ -30,7 +30,7 @@
     "editor.tabSize": 4,
   },
   "stylelint.config": {
-    "extends": "./src/.stylelintrc.app.json"
+    "extends": "./src/.stylelintrc/app.json"
   },
   "todo.file": ".ToDo",
   "todo.indentation": "    ",
