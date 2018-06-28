@@ -26,6 +26,7 @@ git config --global alias.squash '!f(){ git reset --soft HEAD~${1} && git commit
 * git push -u origin master <BR/>
  <BR/>
 
+
 ## [README.md] Basic writing and formatting syntax
 + https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
