@@ -70,6 +70,7 @@ fi
 ```
 
 ##
+
 <details>
 	<summary>Пингвины</summary>
  	<img src="/Penguins.jpg" width="40%" />
