@@ -15,20 +15,32 @@ branches:
 jobs:
   include:
     -
-      if: type = push
+      if: type = push and branch = master
       env: FOO=foo
       before_install:
         - echo 1 $FOO
         - echo 2 $FOO
-      scripts:
+      install:
         - echo 3 $FOO
         - echo 4 $FOO
-    -
-      if: type = pull_request
-      env: FOO=bar
-      before_install:
+      before_script:
         - echo 5 $FOO
         - echo 6 $FOO
       scripts:
         - echo 7 $FOO
         - echo 8 $FOO
+    -
+      if: type = pull_request and branch = master
+      env: FOO=bar
+      before_install:
+        - echo 11 $FOO
+        - echo 22 $FOO
+      install:
+        - echo 33 $FOO
+        - echo 44 $FOO
+      before_script:
+        - echo 55 $FOO
+        - echo 66 $FOO
+      scripts:
+        - echo 77 $FOO
+        - echo 88 $FOO
