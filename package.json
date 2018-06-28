@@ -4,7 +4,8 @@
   "description": "test travis ci",
   "scripts": {
     "release": "standard-version",
-    "standard-version": "standard-version"
+    "standard-version": "standard-version",
+    "test": "no way, bro"
   },
   "repository": {
     "type": "git",
