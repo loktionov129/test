@@ -15,7 +15,7 @@
   "editor.formatOnSave": false,
   "editor.insertSpaces": true,
   "editor.matchBrackets": false,
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "explorer.confirmDelete": false,
   "files.autoSave": "afterDelay",
   "files.exclude": {
