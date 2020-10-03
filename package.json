@@ -1,0 +1,23 @@
+{
+  "name": "travisci",
+  "version": "2.3.1",
+  "description": "test travis ci",
+  "scripts": {
+    "release": "standard-version",
+    "standard-version": "standard-version",
+    "test": "echo no way, bro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loktionov129/travisci.git"
+  },
+  "author": "loktionov129",
+  "license": "BSD 2-Clause License",
+  "bugs": {
+    "url": "https://github.com/loktionov129/travisci/issues"
+  },
+  "homepage": "https://github.com/loktionov129/travisci#readme",
+  "devDependencies": {
+    "standard-version": "4.4.0"
+  }
+}

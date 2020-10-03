@@ -1,0 +1,46 @@
+sudo: required
+language: node_js
+node_js:
+  - stable
+branches:
+  only:
+    - master
+
+#script:
+#  - ls -a ./.circleci/ | grep .sh$ | xargs -I {} chmod +x ./.circleci/{} 
+#  - if [ "$TRAVIS_BRANCH" = "develop" ] || [ "$TRAVIS_BRANCH" = "master" ]; then ./.circleci/main.sh; fi
+#  - if [ "$TRAVIS_BRANCH" = "develop" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./.circleci/develop.sh; fi
+#  - if [ "$TRAVIS_BRANCH" = "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./.circleci/master.sh; fi
+
+jobs:
+  include:
+    -
+      if: type = push and branch = master
+      env: FOO=foo
+      before_install:
+        - echo 1 $FOO
+        - echo 2 $FOO
+      install:
+        - echo 3 $FOO
+        - echo 4 $FOO
+      before_script:
+        - echo 5 $FOO
+        - echo 6 $FOO
+      script:
+        - echo 7 $FOO
+        - echo 8 $FOO
+    -
+      if: type = pull_request and branch = master
+      env: FOO=bar
+      before_install:
+        - echo 11 $FOO
+        - echo 22 $FOO
+      install:
+        - echo 33 $FOO
+        - echo 44 $FOO
+      before_script:
+        - echo 55 $FOO
+        - echo 66 $FOO
+      script:
+        - echo 77 $FOO
+        - echo 88 $FOO
