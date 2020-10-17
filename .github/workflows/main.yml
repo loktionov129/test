@@ -13,8 +13,6 @@ jobs:
 
       - name: Build project # This would actually build your project, using zip for an example artifact
         run: |
-          yarn install
-          yarn build:prod
           zip --junk-paths filename.zip test
 
       - name: Create Release
