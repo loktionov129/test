@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/loktionov129/travisci#readme",
   "devDependencies": {
-    "standard-version": "4.4.0"
+    "standard-version": "9.0.0"
   }
 }
